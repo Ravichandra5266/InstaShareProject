@@ -1,15 +1,15 @@
-.userProfile-details {
+.myProfile-details {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .sm-userProfile-container {
+  .sm-myProfile-container {
     display: none;
   }
 }
-.userProfile-name {
+.myProfile-name {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
@@ -18,24 +18,24 @@
   margin-top: 0px;
 }
 @media screen and (min-width: 768px) {
-  .userProfile-name {
+  .myProfile-name {
     font-size: 32px;
   }
 }
-.userProfile-head-flex-container {
+.myProfile-head-flex-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding: 0px;
   list-style-type: none;
 }
-.userProfile-img {
+.myProfile-img {
   width: 80px;
   height: 80px;
   border-radius: 50px;
 }
 @media screen and (min-width: 768px) {
-  .userProfile-img {
+  .myProfile-img {
     width: 180px;
     height: 180px;
     border-radius: 100px;
@@ -109,7 +109,7 @@
   }
 }
 
-.userProfile-userId {
+.myProfile-userId {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -117,30 +117,30 @@
   color: #262626;
   margin-bottom: 0px;
 }
-.userProfile-bio {
+.myProfile-bio {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   color: #262626;
 }
-.lg-userProfile-container {
+.lg-myProfile-container {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .lg-userProfile-container {
+  .lg-myProfile-container {
     display: flex;
     justify-content: flex-start;
     margin-left: 15px;
   }
 }
 @media screen and (min-width: 768px) {
-  .lg-userProfile-text-container {
+  .lg-myProfile-text-container {
     margin-left: 15px;
   }
 }
 
-.userProfile-stories-list-container {
+.myProfile-stories-list-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -148,11 +148,11 @@
   list-style-type: none;
   margin-top: 15px;
 }
-.userProfile-story-container {
+.myProfile-story-container {
   margin-left: 15px;
   margin-right: 15px;
 }
-.userProfile-story {
+.myProfile-story {
   width: 55px;
   height: 55px;
   border-radius: 50px;
@@ -184,7 +184,7 @@
   }
 }
 
-.userProfile-posts-list-container {
+.myProfile-posts-list-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -192,28 +192,28 @@
   list-style-type: none;
   flex-wrap: wrap;
 }
-.userProfilePost {
+.myProfilePost {
   margin: 2px;
 }
 @media screen and (min-width: 768px) {
-  .userProfilePost {
+  .myProfilePost {
     margin: 22px;
   }
 }
 
-.userProfile-post {
+.myProfile-post {
   width: 135px;
   height: 135px;
   border-radius: 8px;
 }
 @media screen and (min-width: 768px) {
-  .userProfile-post {
+  .myProfile-post {
     width: 330px;
     height: 330px;
   }
 }
 
-.userProfile-post-empty-container {
+.myProfile-post-empty-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -228,7 +228,7 @@
   height: 100px;
   padding: 5px;
 }
-.userProfile-empty-post-text {
+.myProfile-empty-post-text {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;

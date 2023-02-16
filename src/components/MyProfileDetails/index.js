@@ -4,8 +4,8 @@ import {BiCamera} from 'react-icons/bi'
 
 import './index.css'
 
-const UserProfileDetails = props => {
-  const {userProfileData} = props
+const MyProfileDetails = props => {
+  const {myProfileData} = props
   //   console.log(userProfileData)
   const {
     followersCount,
@@ -17,17 +17,13 @@ const UserProfileDetails = props => {
     userId,
     userName,
     profilePic,
-  } = userProfileData
+  } = myProfileData
   return (
-    <li className="userProfile-details">
-      <div className="sm-userProfile-container">
-        <h1 className="userProfile-name">{userName}</h1>
-        <ul className="userProfile-head-flex-container">
-          <img
-            src={profilePic}
-            alt="user profile"
-            className="userProfile-img"
-          />
+    <li className="myProfile-details">
+      <div className="sm-myProfile-container">
+        <h1 className="myProfile-name">{userName}</h1>
+        <ul className="myProfile-head-flex-container">
+          <img src={profilePic} alt="my profile" className="myProfile-img" />
           <li className="post-item-container">
             <h1 className="count">{postsCount}</h1>
             <p className="count-text">posts</p>
@@ -41,14 +37,14 @@ const UserProfileDetails = props => {
             <p className="count-text">following</p>
           </li>
         </ul>
-        <h1 className="userProfile-userId">{userId}</h1>
-        <p className="userProfile-bio">{userBio}</p>
+        <h1 className="myProfile-userId">{userId}</h1>
+        <p className="myProfile-bio">{userBio}</p>
       </div>
-      <div className="lg-userProfile-container">
-        <img src={profilePic} alt="user profile" className="userProfile-img" />
-        <div className="lg-userProfile-text-container">
-          <h1 className="userProfile-name">{userName}</h1>
-          <ul className="userProfile-head-flex-container">
+      <div className="lg-myProfile-container">
+        <img src={profilePic} alt="my profile" className="myProfile-img" />
+        <div className="lg-myProfile-text-container">
+          <h1 className="myProfile-name">{userName}</h1>
+          <ul className="myProfile-head-flex-container">
             <li className="post-item-container">
               <h1 className="count">{postsCount}</h1>
               <p className="count-text">posts</p>
@@ -62,17 +58,17 @@ const UserProfileDetails = props => {
               <p className="count-text">following</p>
             </li>
           </ul>
-          <h1 className="userProfile-userId">{userId}</h1>
-          <p className="userProfile-bio">{userBio}</p>
+          <h1 className="myProfile-userId">{userId}</h1>
+          <p className="myProfile-bio">{userBio}</p>
         </div>
       </div>
-      <ul className="userProfile-stories-list-container">
+      <ul className="myProfile-stories-list-container">
         {stories.map(eachStory => (
-          <li key={eachStory.id} className="userProfile-story-container">
+          <li key={eachStory.id} className="myProfile-story-container">
             <img
               src={eachStory.image}
-              alt="user story"
-              className="userProfile-story"
+              alt="my story"
+              className="myProfile-story"
             />
           </li>
         ))}
@@ -82,21 +78,21 @@ const UserProfileDetails = props => {
         <BsGrid3X3 className="grid-icon" />
         <h1 className="posts-title">Posts</h1>
       </div>
-      <ul className="userProfile-posts-list-container">
+      <ul className="myProfile-posts-list-container">
         {posts.length > 0 ? (
           posts.map(eachPost => (
-            <li key={eachPost.id} className="userProfilePost">
+            <li key={eachPost.id} className="myProfilePost">
               <img
                 src={eachPost.image}
-                alt="user post"
-                className="userProfile-post"
+                alt="my post"
+                className="myProfile-post"
               />
             </li>
           ))
         ) : (
-          <div className="userProfile-post-empty-container">
+          <div className="myProfile-post-empty-container">
             <BiCamera className="camera-icon" />
-            <h1 className="userProfile-empty-post-text">No Posts</h1>
+            <h1 className="myProfile-empty-post-text">No Posts</h1>
           </div>
         )}
       </ul>
@@ -104,4 +100,4 @@ const UserProfileDetails = props => {
   )
 }
 
-export default UserProfileDetails
+export default MyProfileDetails

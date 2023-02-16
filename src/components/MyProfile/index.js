@@ -4,7 +4,7 @@ import Loader from 'react-loader-spinner'
 
 import Cookies from 'js-cookie'
 
-import UserProfileDetails from '../UsersProfileDetails'
+import MyProfileDetails from '../MyProfileDetails'
 
 import Header from '../Header'
 
@@ -17,22 +17,20 @@ const apiStatusConstant = {
   inProgress: 'INPROGRESS',
 }
 
-class UsersProfile extends Component {
+class MyProfile extends Component {
   state = {
-    usersProfileApisStatus: apiStatusConstant.initial,
-    userProfileData: {},
+    myProfileApisStatus: apiStatusConstant.initial,
+    myProfileData: {},
   }
 
   componentDidMount() {
-    this.getUsersProfileData()
+    this.getMyProfileData()
   }
 
-  getUsersProfileData = async () => {
-    this.setState({usersProfileApisStatus: apiStatusConstant.inProgress})
-    const {match} = this.props
-    const {params} = match
-    const {userId} = params
-    const UserProfileApi = `https://apis.ccbp.in/insta-share/users/${userId}`
+  getMyProfileData = async () => {
+    this.setState({myProfileApisStatus: apiStatusConstant.inProgress})
+
+    const MyProfileApi = 'https://apis.ccbp.in/insta-share/my-profile'
     const token = Cookies.get('jwt_token')
     const options = {
       method: 'GET',
@@ -40,12 +38,12 @@ class UsersProfile extends Component {
         Authorization: `Bearer ${token}`,
       },
     }
-    const responseUrl = await fetch(UserProfileApi, options)
+    const responseUrl = await fetch(MyProfileApi, options)
     // console.log(responseUrl)
     if (responseUrl.ok) {
       const responseData = await responseUrl.json()
       //   console.log(responseData)
-      const data = responseData.user_details
+      const data = responseData.profile
       const updatedData = {
         followersCount: data.followers_count,
         followingCount: data.following_count,
@@ -66,68 +64,68 @@ class UsersProfile extends Component {
       }
       //   console.log(updatedData)
       this.setState({
-        usersProfileApisStatus: apiStatusConstant.success,
-        userProfileData: updatedData,
+        myProfileApisStatus: apiStatusConstant.success,
+        myProfileData: updatedData,
       })
     } else {
-      this.setState({usersProfileApisStatus: apiStatusConstant.failure})
+      this.setState({myProfileApisStatus: apiStatusConstant.failure})
     }
   }
 
-  renderUserProfileLoadingView = () => (
-    <div className="usersProfile-loading-container">
+  renderMyProfileLoadingView = () => (
+    <div className="myProfile-loading-container">
       <Loader type="TailSpin" color="blue" height={50} width={50} />
     </div>
   )
 
-  renderUserProfileSuccessView = () => {
-    const {userProfileData} = this.state
+  renderMyProfileSuccessView = () => {
+    const {myProfileData} = this.state
     return (
-      <ul className="userProfile-data-container">
-        <UserProfileDetails
-          userProfileData={userProfileData}
-          key={userProfileData.id}
+      <ul className="myProfile-data-container">
+        <MyProfileDetails
+          myProfileData={myProfileData}
+          key={myProfileData.id}
         />
       </ul>
     )
   }
 
-  onClickConnectToUserProfile = () => {
-    this.getUsersProfileData()
+  onClickConnectToMyProfile = () => {
+    this.getMyProfileData()
   }
 
-  renderUserProfileFailureView = () => (
-    <div className="userProfile-failure-container">
+  renderMyProfileFailureView = () => (
+    <div className="myProfile-failure-container">
       <img
         src="https://res.cloudinary.com/dnmaskg3n/image/upload/v1674886994/Group_7737_ipxqpg.png"
         alt="failure view"
-        className="userProfile-failure-img"
+        className="myProfile-failure-img"
       />
-      <p className="userProfile-failure-description">
+      <p className="myProfile-failure-description">
         Something went wrong. Please try again
       </p>
       <button
         type="button"
-        className="userProfile-failure-btn"
-        onClick={this.onClickConnectToUserProfile}
+        className="myProfile-failure-btn"
+        onClick={this.onClickConnectToMyProfile}
       >
         Try again
       </button>
     </div>
   )
 
-  renderUsersProfileData = () => {
-    const {usersProfileApisStatus} = this.state
+  renderMyProfileData = () => {
+    const {myProfileApisStatus} = this.state
     let showCurrentResults = null
-    switch (usersProfileApisStatus) {
+    switch (myProfileApisStatus) {
       case apiStatusConstant.success:
-        showCurrentResults = this.renderUserProfileSuccessView()
+        showCurrentResults = this.renderMyProfileSuccessView()
         break
       case apiStatusConstant.failure:
-        showCurrentResults = this.renderUserProfileFailureView()
+        showCurrentResults = this.renderMyProfileFailureView()
         break
       case apiStatusConstant.inProgress:
-        showCurrentResults = this.renderUserProfileLoadingView()
+        showCurrentResults = this.renderMyProfileLoadingView()
         break
       default:
         showCurrentResults = null
@@ -138,12 +136,12 @@ class UsersProfile extends Component {
 
   render() {
     return (
-      <div className="users-profile-page-container">
+      <div className="my-profile-page-container">
         <Header />
-        {this.renderUsersProfileData()}
+        {this.renderMyProfileData()}
       </div>
     )
   }
 }
 
-export default UsersProfile
+export default MyProfile

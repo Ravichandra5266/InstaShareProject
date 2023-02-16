@@ -126,6 +126,9 @@ class Login extends Component {
                 <BiHide className="password-icon" />
               </button>
             </div>
+            {isFormSubmitted && (
+              <p className="login-error-msg">{loginErrorMsg}</p>
+            )}
             <button type="submit" className="login-btn">
               Login
             </button>

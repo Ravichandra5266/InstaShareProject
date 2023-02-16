@@ -6,6 +6,8 @@ import Home from './components/Home'
 
 import UsersProfile from './components/UsersProfile'
 
+import MyProfile from './components/MyProfile'
+
 import ProtectedRoutes from './components/ProtectedRoutes'
 
 const App = () => (
@@ -13,6 +15,7 @@ const App = () => (
     <Route exact path="/login" component={Login} />
     <ProtectedRoutes exact path="/" component={Home} />
     <ProtectedRoutes exact path="/users/:userId" component={UsersProfile} />
+    <ProtectedRoutes exact path="/my-profile" component={MyProfile} />
   </Switch>
 )
 

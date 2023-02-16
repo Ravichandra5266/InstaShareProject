@@ -1,25 +1,25 @@
-.users-profile-page-container {
+.my-profile-page-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   min-height: 100vh;
   width: 100%;
 }
-.usersProfile-loading-container {
+.myProfile-loading-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: auto;
 }
-.userProfile-data-container {
+.myProfile-data-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding: 0px;
   list-style-type: none;
 }
-.userProfile-failure-container {
+.myProfile-failure-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -27,7 +27,7 @@
   text-align: center;
   margin: auto;
 }
-.userProfile-failure-description {
+.myProfile-failure-description {
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 400;
@@ -35,7 +35,7 @@
   color: #262626;
 }
 @media screen and (min-width: 768px) {
-  .userProfile-failure-description {
+  .myProfile-failure-description {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -43,7 +43,7 @@
     color: #262626;
   }
 }
-.userProfile-failure-btn {
+.myProfile-failure-btn {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 500;

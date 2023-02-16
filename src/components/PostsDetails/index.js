@@ -79,6 +79,7 @@ const PostsDetails = props => {
         </ul>
         <p className="post-like">{`${likesCount} likes`}</p>
         <p className="post-caption">{postDetails.caption}</p>
+
         <ul className="comment-list-container">
           {comments.map(eachComment => (
             <li key={eachComment.userId}>

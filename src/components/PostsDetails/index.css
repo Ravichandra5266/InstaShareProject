@@ -10,7 +10,7 @@
 }
 @media screen and (min-width: 768px) {
   .post-container {
-    width: 60%;
+    width: 70%;
   }
 }
 .post-head-container {
@@ -84,6 +84,7 @@
   font-weight: 500;
   font-size: 12px;
   color: #262626;
+  margin: 5px;
 }
 @media screen and (min-width: 768px) {
   .post-like {
@@ -96,6 +97,7 @@
   font-weight: 400;
   font-size: 12px;
   color: #262626;
+  margin: 5px;
 }
 @media screen and (min-width: 768px) {
   .post-caption {
@@ -113,6 +115,7 @@
   font-weight: 500;
   font-size: 12px;
   color: #262626;
+  margin: 5px;
 }
 @media screen and (min-width: 768px) {
   .post-comment-username {
@@ -126,6 +129,7 @@
   font-size: 10px;
   color: #262626;
   margin-left: 5px;
+  margin: 5px;
 }
 @media screen and (min-width: 768px) {
   .post-comment-text {

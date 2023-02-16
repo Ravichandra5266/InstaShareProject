@@ -113,6 +113,14 @@
   font-size: 14px;
   color: #262626;
 }
+.login-error-msg {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ef4444;
+  margin: 0px;
+}
 .login-btn {
   background: #4094ef;
   border-radius: 8px;
@@ -125,4 +133,5 @@
   font-weight: 700;
   font-size: 14px;
   color: #ffffff;
+  margin-top: 10px;
 }
