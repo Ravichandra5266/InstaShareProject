@@ -1,0 +1,137 @@
+.post-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 5px;
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #c6c6c8;
+  border-radius: 5px;
+}
+@media screen and (min-width: 768px) {
+  .post-container {
+    width: 60%;
+  }
+}
+.post-head-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.post-profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+@media screen and (min-width: 768px) {
+  .post-profile-pic {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+.post-user-name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #262626;
+  margin-left: 10px;
+}
+.post-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 5px;
+}
+.post-bottom-container {
+  padding: 10px;
+}
+.post-btn-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  list-style-type: none;
+}
+.post-item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.like-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.like-icon {
+  width: 22px;
+  height: 22px;
+}
+.unlike-icon {
+  width: 22px;
+  height: 22px;
+}
+.comment-icon {
+  width: 22px;
+  height: 22px;
+}
+.share-icon {
+  width: 22px;
+  height: 22px;
+}
+.post-like {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #262626;
+}
+@media screen and (min-width: 768px) {
+  .post-like {
+    font-size: 16px;
+  }
+}
+.post-caption {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #262626;
+}
+@media screen and (min-width: 768px) {
+  .post-caption {
+    font-size: 16px;
+  }
+}
+
+.comment-list-container {
+  padding: 0px;
+  list-style: none;
+}
+.post-comment-username {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #262626;
+}
+@media screen and (min-width: 768px) {
+  .post-comment-username {
+    font-size: 16px;
+  }
+}
+
+.post-comment-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-size: 10px;
+  color: #262626;
+  margin-left: 5px;
+}
+@media screen and (min-width: 768px) {
+  .post-comment-text {
+    font-size: 16px;
+  }
+}
+.route-link {
+  text-decoration: none;
+}

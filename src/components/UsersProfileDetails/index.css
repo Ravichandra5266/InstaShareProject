@@ -1,0 +1,159 @@
+.userProfile-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+.userProfile-name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #262626;
+  margin-top: 0px;
+}
+.userProfile-head-flex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  list-style-type: none;
+}
+.userProfile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+.post-item-container {
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.followers-item-container {
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.following-item-container {
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.count {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #262626;
+  margin: 0px;
+}
+.count-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #262626;
+  margin: 0px;
+}
+.userProfile-userId {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #262626;
+  margin-bottom: 0px;
+}
+.userProfile-bio {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #262626;
+}
+.userProfile-stories-list-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  list-style-type: none;
+}
+.userProfile-story-container {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.userProfile-story {
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+}
+.hr-line {
+  width: 100%;
+  border: 0.5px solid #c6c6c8;
+}
+.post-head-flex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.grid-icon {
+  width: 18px;
+  height: 18px;
+}
+.posts-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #262626;
+  margin-left: 5px;
+}
+.userProfile-posts-list-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+.userProfilePost {
+  margin: 2px;
+}
+.userProfile-post {
+  width: 135px;
+  height: 135px;
+  border-radius: 8px;
+}
+.userProfile-post-empty-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.camera-icon {
+  border: 1px solid;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+.userProfile-empty-post-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: #262626;
+}
