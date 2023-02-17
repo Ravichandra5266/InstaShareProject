@@ -95,10 +95,10 @@ class HomeStories extends Component {
     }
 
     return (
-      <Slider {...settings} className="slider-container">
-        {storiesListData.map(eachStory => (
-          <ul className="stories-list-container" key={eachStory.userId}>
-            <li className="story-container">
+      <ul className="stories-list-container">
+        <Slider {...settings}>
+          {storiesListData.map(eachStory => (
+            <li key={eachStory.userId}>
               <img
                 src={eachStory.storyUrl}
                 alt="user story"
@@ -106,9 +106,9 @@ class HomeStories extends Component {
               />
               <h1 className="slider-user-name">{eachStory.userName}</h1>
             </li>
-          </ul>
-        ))}
-      </Slider>
+          ))}
+        </Slider>
+      </ul>
     )
   }
 

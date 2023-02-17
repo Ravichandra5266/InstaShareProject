@@ -105,6 +105,7 @@ class Posts extends Component {
 
   onClickDecrementUnlikeCount = async value => {
     // console.log(value)
+    console.log(value)
     const PostLikeApi = `https://apis.ccbp.in/insta-share/posts/${value}/like`
     const token = Cookies.get('jwt_token')
     const options = {
@@ -140,8 +141,8 @@ class Posts extends Component {
           <PostsDetails
             eachPost={eachPost}
             key={eachPost.postId}
-            onClickDecrementUnlikeCount={this.onClickDecrementUnlikeCount}
             onClickIncrementLikeCount={this.onClickIncrementLikeCount}
+            onClickDecrementUnlikeCount={this.onClickDecrementUnlikeCount}
           />
         ))}
       </ul>

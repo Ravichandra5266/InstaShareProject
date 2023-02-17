@@ -8,13 +8,15 @@ import {BiShareAlt} from 'react-icons/bi'
 
 import {Link} from 'react-router-dom'
 
+// import InstaShareContext from '../../InstaShareContext/InstaShareContext'
+
 import './index.css'
 
 const PostsDetails = props => {
   const {
     eachPost,
-    onClickDecrementUnlikeCount,
     onClickIncrementLikeCount,
+    onClickDecrementUnlikeCount,
   } = props
   //   console.log(eachPost)
   const {
@@ -79,7 +81,6 @@ const PostsDetails = props => {
         </ul>
         <p className="post-like">{`${likesCount} likes`}</p>
         <p className="post-caption">{postDetails.caption}</p>
-
         <ul className="comment-list-container">
           {comments.map(eachComment => (
             <li key={eachComment.userId}>
@@ -90,6 +91,7 @@ const PostsDetails = props => {
             </li>
           ))}
         </ul>
+        <p className="post-time">{createdAt}</p>
       </div>
     </li>
   )
