@@ -1,0 +1,237 @@
+.userProfile-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .sm-userProfile-container {
+    display: none;
+  }
+}
+.userProfile-name {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  color: #262626;
+  margin-top: 0px;
+}
+@media screen and (min-width: 768px) {
+  .userProfile-name {
+    font-size: 32px;
+  }
+}
+.userProfile-head-flex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  list-style-type: none;
+}
+.userProfile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+}
+@media screen and (min-width: 768px) {
+  .userProfile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+  }
+}
+
+.post-item-container {
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .post-item-container {
+    flex-direction: row;
+    margin-left: 0px;
+  }
+}
+.followers-item-container {
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .followers-item-container {
+    flex-direction: row;
+  }
+}
+
+.following-item-container {
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .following-item-container {
+    flex-direction: row;
+  }
+}
+
+.count {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #262626;
+  margin: 0px;
+}
+.count-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #262626;
+  margin: 0px;
+}
+@media screen and (min-width: 768px) {
+  .count-text {
+    margin-left: 5px;
+  }
+}
+
+.userProfile-userId {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: #262626;
+  margin-bottom: 0px;
+}
+.userProfile-bio {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #262626;
+}
+.lg-userProfile-container {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .lg-userProfile-container {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .lg-userProfile-text-container {
+    margin-left: 15px;
+  }
+}
+
+.userProfile-stories-list-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  list-style-type: none;
+  margin-top: 15px;
+}
+.userProfile-story-container {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.userProfile-story {
+  width: 55px;
+  height: 55px;
+  border-radius: 50px;
+}
+.hr-line {
+  width: 100%;
+  border: 0.5px solid #c6c6c8;
+}
+.post-head-flex-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.grid-icon {
+  width: 18px;
+  height: 18px;
+}
+.posts-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  color: #262626;
+  margin-left: 5px;
+}
+@media screen and (min-width: 768px) {
+  .posts-title {
+    font-size: 24px;
+  }
+}
+
+.userProfile-posts-list-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0px;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+.userProfilePost {
+  margin: 2px;
+}
+@media screen and (min-width: 768px) {
+  .userProfilePost {
+    margin: 22px;
+  }
+}
+
+.userProfile-post {
+  width: 165px;
+  height: 165px;
+  border-radius: 8px;
+}
+@media screen and (min-width: 768px) {
+  .userProfile-post {
+    width: 330px;
+    height: 330px;
+  }
+}
+
+.userProfile-post-empty-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+.camera-icon {
+  border: 1px solid;
+  border-radius: 50px;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+.userProfile-empty-post-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  color: #262626;
+}
